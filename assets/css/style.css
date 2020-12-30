@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Athene';
+    src: url(../fonts/Athene.otf);
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src:  url(../fonts/Open_Sans/OpenSans-Regular.ttf);
+
+} 
+
+@font-face {
+    font-family: 'Mashi';
+    src:  url(../fonts/NeueMachina-Medium.woff2);
+
+} 
+
+/* 
+
+Questions / TO DO:
+
+1. Schrift Athene wohl bold - sieht so nach Vorlage aus
+2. Double dash soll zum tripple or quartetdash
+3. Ausrichtung des Unterschrift unter dem ersten Image 
+soll an die linke Kante des Bildes erfolgen 
+*/
+
+
+
+
+html, body section{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+}
+
+body{
+    background-color: #efe8d7;
+
+}
+
+/* Header and first page + diverses */
+
+header{
+    /* border: 1px solid black; */
+    position: fixed;
+    top:0;
+    width: 100%;
+    /* background-color: transparent; */
+
+}
+
+header, main section:first-of-type{
+    color: #002a5a;
+}
+
+h1{
+    font-family: 'Athene';
+    font-size: 8em;
+    margin: 0
+}
+
+
+header div:first-of-type {
+    display: flex;
+    /* width: 100%; */
+    justify-content: space-between;
+    border-bottom: 1px solid #002a5a;
+
+    
+}
+
+header div:first-of-type p{
+    display: inline-block;
+    padding: 0 80px;
+}
+
+
+main section:first-of-type{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+main section:first-of-type div h1{
+    border-bottom: 1px solid #002a5a;
+  
+    /* border: 2px dotted tomato; */
+
+}
+
+main section:first-of-type div h1:first-of-type{
+    margin-top: 100px;
+}
+
+
+main section:first-of-type div:last-child{
+   margin-top: 50px;
+}
+
+main section h6{
+    margin-top: 20px;
+    font-size: 1.4em;
+}
+
+span{
+    font-style: none;
+    font-family: 'Athene';
+
+}
+
+
