@@ -4,7 +4,7 @@
 }
 
 @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans reg';
     src:  url(../fonts/Open_Sans/OpenSans-Regular.ttf);
 } 
 
@@ -26,10 +26,18 @@
 Questions / Issues/ TO DO:
 
 1. Schrift Athene wohl bold - sieht so nach Vorlage aus. Aber 
-bei dem kleinen font-size its ok...
+bei dem kleinen font-size its ok... (Gelost)
+
+SOLVED + nächste Frage
+!! Warum war bei Athene font direct die normal Version drin,
+aber für open sans ist je eine Export  für jede "width" nötig,
+besteht die Möglichkeit, alle 
 
 2. Double dash soll zum tripple or quartetdash
-SOLVED - aber es sollte wohl noch eine Möglichkeit geben
+SOLVED! Resultiert aus Frage 1
+
+3. Menu Page "Principles and Values to complex and not completely
+correct - see unterlines.  
 
 
 */
@@ -37,7 +45,7 @@ SOLVED - aber es sollte wohl noch eine Möglichkeit geben
 
 
 
-html, body section{
+html, body, section{
     margin: 0;
     padding: 0;
     font-family: 'Open Sans';
@@ -65,7 +73,8 @@ header, main section:first-of-type{
 
 h1{
     font-family: 'Athene';
-    font-size: 8em;
+    font-size: 10em;
+    font-weight: normal;
     margin: 0
 }
 
@@ -104,14 +113,16 @@ main section:first-of-type div h1:first-of-type{
     margin-top: 100px;
 }
 
+
+
 main section:first-of-type div:first-of-type h1:last-of-type span{
-letter-spacing: -24px;
+letter-spacing: -30px;
 }
 
 
 main section:first-of-type div:last-child{
    margin-top: 50px;
-   margin: 50px auto 50px auto;
+   margin: 50px auto 150px auto;
    text-align: left;
 
 }
@@ -135,8 +146,314 @@ span{
 }
 
 
+
+
 /* Pink Page - Seite 2 */
 
+/* main section:nth-child(2) */
+
 main section:nth-child(2){
+    margin:0;
+    padding:0;
     background-color: #f4c4c4;
+    /* margin-top: 100px; */
+}
+
+main section p:first-of-type{
+    padding:  100px;
+    padding-bottom: 40px;
+}
+
+h1{
+    padding-bottom: 0;
+}
+
+main section:nth-of-type(2) div:first-of-type h1{
+    color: #282b29;
+}
+
+main section:not(:first-child) div:first-of-type h1{
+    margin: 0;
+    padding: 0;
+    line-height: 120%;
+}
+
+main section:nth-of-type(2) > div:nth-of-type(2){
+    /* width: 85%; */
+    padding: 0;
+    padding-right: 7%;
+    padding-left: 5%;
+    text-align: right;
+
+}
+
+
+/* div1 - long text*/
+main section:nth-of-type(2)  div:nth-of-type(2) > div:first-child{
+    margin: 0;
+    padding: 0;
+    margin-left: 60%;
+    text-align: left;
+
+}
+
+/* Principles and Values Div */
+main section:nth-of-type(2)  div:nth-of-type(2) > div:nth-child(2) div:first-child{
+    margin: 0;
+    padding: 0;
+    /* margin-left: 60%; */
+    text-align: right;
+    /* border: red 1px solid; */
+    border-bottom: 1px solid #000;
+
+}
+
+main section:nth-of-type(2)  div:nth-of-type(2) > div:nth-child(2) div:first-child h5{
+    margin: 0;
+}
+
+
+main section:nth-of-type(2) > div:nth-of-type(2) p{
+    margin: 0;
+    padding: 0;
+    line-height: 190%;
+    font-size: 1.1em;
+    margin-bottom: 100px;
+}
+
+main section:nth-of-type(2) > div:nth-of-type(2) h5{
+    
+    font-size: 1.4em;
+    font-family: 'Open Sans reg';
+}
+
+/* whole div  */
+main section:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) {
+
+    text-align: left;
+    /* border: 3px wheat solid; */
+    margin-left: 50%;
+}
+
+/* list */
+main section:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) div:not(:first-child) {
+    border: #f4c4c4 1px solid;
+    border-bottom: 1px solid #000;
+
+    
+}    
+
+main section:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) div:not(:first-child) h5{
+    font-size: 1.6em;
+    display: inline-block;
+    /* margin-left: 5%;
+    margin-right: 20%; */
+    border: #f4c4c4 1px dashed;
+}
+
+main section:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) div:not(:first-child) span{
+    font-family: 'Open Sans reg';
+    font-size: 0.9em;
+    opacity: .6;
+
+    /* text-align: right; */
+}
+
+
+main section:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) div:not(:first-child) p{
+    display: inline;
+    font-family: 'Open Sans reg';
+    font-size: 0.9em;
+    opacity: .6;
+    text-align: right;
+    float: right;
+}
+
+
+main section:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) div:not(:first-child) > div:first-of-type{
+    display: inline-block;
+    border: #f4c4c4 3px dashed;
+    /* width: 61%; */
+    margin-left: 30px;
+    padding-right: 10%;
+
+}
+
+main section:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) div:not(:first-child) > div:first-child{
+    padding-right: 40%;
+
+}
+
+
+
+main section:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) div:not(:first-child) div:last-child{
+    display: flex-block;
+    border: #f4c4c4 4px dashed;
+    text-align: right;
+    float: right;
+    width: 110px;
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+    padding-bottom: 19px;
+}
+
+main section:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) div:last-child div:last-child{
+    margin-top: 26px;
+    padding-bottom: 30px;
+}
+
+main section:nth-of-type(2) > div:last-child > div:last-of-type{
+    text-align: right;
+    margin-top:100px;
+    padding-bottom:100px;
+}
+
+main section:nth-of-type(2) img{
+    width: 12%;
+}
+
+
+/* Orange Page */
+
+main section:nth-child(3){
+    margin:0;
+    padding:0;
+    background-color: #deb873;
+    text-align: right;
+    padding-bottom: 10px;
+    /* margin-top: 100px; */
+}
+
+main section:nth-of-type(3) div:not(:first-of-type){
+    width: 85%;
+    margin: 0 auto;
+    /* display: inline-block; */
+    
+}
+
+/* LONG TEXT */
+main section:nth-of-type(3) p:nth-of-type(2){
+    /* padding-right: 70%;   !SWITCHIN SCROLL LEFT!!!! */
+    width: 36%;
+    text-align: left;
+    padding-left: 7.5%;
+    line-height: 190%;
+    font-size: 1.1em;
+    padding-bottom: 120px;
+}
+
+/* ORANGE PICTURES AND TEXT */
+main section:nth-of-type(3) div h3{
+    margin:0;
+    padding: 0;
+    font-family: 'Athene';
+    font-size: 4em;
+    /* display: inline-block; */
+
+}
+
+main section:nth-of-type(3) div:not(:first-of-type){
+    margin: 0 auto;
+    margin-bottom:  250px;
+    height: 65vh;
+
+}
+
+main section:nth-of-type(3) div:nth-of-type(2){
+    
+    background-image: url('../img/bg-marconatto-1.jpg');
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: right;
+    text-align: left;
+}
+
+main section:nth-of-type(3) div:nth-of-type(4){
+    background-image: url('../img/bg-nicole-1.jpg');
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: right;
+    text-align: left;
+}
+
+main section:nth-of-type(3) div:nth-of-type(3){
+    background-image: url('../img/kathe_cover-1.jpg');
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: left;
+    text-align: right;
+}
+
+main section:nth-of-type(3) div:nth-of-type(5){
+    background-image: url('../img/boa_cover-1.jpg');
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: left;
+    text-align: right;
+}
+
+
+main section:nth-child(3) img{
+    width: 60%;
+}
+
+main section:nth-child(3) p:first-of-type{
+    margin: 0;
+}
+
+main section:nth-of-type(3){
+    color: #7d2222;
+}
+
+
+
+
+/* LAST PAGE */
+
+/* TEXT IN DER MITTE */
+
+main section:nth-of-type(4){
+    padding: 0;
+    margin: 0;
+    background-color: #d2d2d2;
+    color: #1d8883;
+}
+main section:nth-of-type(4) p{
+    margin-top: 0;
+}
+
+
+main section:nth-of-type(4) p:nth-of-type(2){
+    /* padding-right: 70%;   !SWITCHIN SCROLL LEFT!!!! */
+    width: 30%;
+    margin: 0 auto;
+    text-align: left;
+    padding-left: 0%;
+    line-height: 190%;
+    font-size: 1.6em;
+}
+
+/* NAV */
+nav, ul, li{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav{
+    margin-top: 100px;
+    text-align: right;
+    padding-right: 7.5%;
+    padding-bottom: 80px;
+    font-size: 2em;
+    line-height: 140%;
+}
+
+li:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
